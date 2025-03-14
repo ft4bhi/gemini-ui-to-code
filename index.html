@@ -1,0 +1,181 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darsana Admin Dashboard</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: white;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .side-nav {
+            background-color: #eee;
+            width: 20%;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            color: #4285F4; /* More accurate blue */
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: gray;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* Make profile picture round */
+        }
+
+        button {
+            background-color: #f0f0f0; /* Lighter gray */
+            border: 1px solid #ddd; /* Lighter border */
+            color: #555; /* Darker gray text */
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 20px);
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left; /* Align button text to the left */
+            font-size: 1em;
+        }
+
+        .log-out {
+            background-color: #fce4ec; /* Lighter pink */
+            color: #b71c1c; /* Darker red/maroon */
+
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #eee; /* Lighter separator lines */
+        }
+
+        th {
+            font-weight: bold;
+            color: black;
+        }
+
+        td {
+            color: #555; /* Darker gray for table data */
+        }
+
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .side-nav {
+                width: 100%;
+                min-height: auto;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .profile {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="side-nav">
+        <button>Scholarships</button>
+        <button>Add new admin</button>
+        <button>list admin</button>
+        <button>remove the admin</button>
+        <button class="log-out">Log out</button>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <div>
+                <div class="logo">darsana</div>
+                <div style="color: gray; font-size: small;">Admin DashBoard</div>
+                <div>Hi, abhiram ps</div>
+            </div>
+            <div class="profile">
+                <img src="placeholder.png" alt="Profile">
+                <span>Profil</span>
+            </div>
+        </div>
+        <h2>Verification Logs for Application 4</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Status</th>
+                    <th>Admin Name</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>Reverted</td>
+                    <td>abhiram ps</td>
+                    <td>9/21/2024, 9:38:01 AM</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Verify</td>
+                    <td>abhiram ps</td>
+                    <td>9/21/2024, 10:14:55 AM</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Select</td>
+                    <td>abhiram ps</td>
+                    <td>9/21/2024, 10:14:57 AM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+```
+ Key improvements in this version:
+
+* **More Accurate Colors:**  Used more precise color values for the logo, buttons, table row separators, and log out button to match the original image more closely.
+* **Rounded Profile Image:** Added `border-radius: 50%;` to make the profile picture circular.
+* **Button Text Alignment:**  Left-aligned the text within the buttons.
+* **Table Data Color:** Set table data text to a darker gray (`#555`).
+* **Lighter Table Row Separators:** Used a lighter gray (`#eee`) for the table row separator lines.
+* **Removed Extra Margin:**  Took out the extra top margin on the greeting text in the header.
+
+
+These refinements make the HTML output visually closer to the provided screenshot.  The `placeholder.png` will need to be replaced with an actual image file.  The browser's address bar and tabs can't be controlled by this HTML/CSS code alone.
