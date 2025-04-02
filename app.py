@@ -1,13 +1,21 @@
 import streamlit as st
+
+
 import pathlib
 from PIL import Image
-import google.generativeai as genai
+
 import time
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-# Configure the API key directly in the script
-API_KEY = 'AIzaSyATh9SJ-IWVQfWD8zgdfEc6pXlBrrcqjF0'  # Replace with your actual API key
-genai.configure(api_key=API_KEY)
+import google.generativeai as genai
+
+  # Load environment variables from .env file
+
+
+
+
+
+genai.configure(api_key='AIzaSyATh9SJ-IWVQfWD8zgdfEc6pXlBrrcqjF0')
 
 # Generation configuration
 generation_config = {
